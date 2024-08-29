@@ -1,0 +1,126 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %} Home {% endblock title %}
+
+{% block banner-slider %} 
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner image" width="800" height="600">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner image" width="800" height="550">
+      </div>
+       
+      <div class="carousel-item">
+          <img src="{% static 'app/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner image" width="800" height="550">
+      </div>
+ 
+        <div class="carousel-item">
+            <img src="{% static 'app/images/banner/b7.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+
+        <div class="carousel-item ">
+            <img src="{% static 'app/images/banner/b5.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+        
+        <div class="carousel-item ">
+            <img src="{% static 'app/images/banner/b6.jpg' %}" class="d-block w-100" alt="banner image" width="800" height="550">
+      </div>        
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{% endblock banner-slider %}
+
+{%block information %}
+<div class="container">
+  <div class="row bg-warning text-center p-5 text-white border-bottom shadow">
+    <h1>Products</h1>
+    <small class="fs-5">
+  Trendy women’s clothing - Online shopping for women at Style Studio is a mood-elevating experience. Look hip and stay comfortable with chinos and printed shorts this summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered and peplum tops, to name a few. Team them up with skinny-fit jeans, skirts or palazzos. Kurtis and jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees and lehenga-choli selections are perfect to make an impression at big social events such as weddings. Our salwar-kameez sets, kurtas and Patiala suits make comfortable options for regular wear.</small>
+  </div>
+</div>
+{% endblock information %}
+
+{% block main-content %}
+<div class="container">
+  <h2 class="text-center">Women’s stylish Wordrobe Collectins</h2>
+  <br/><br/>
+  <div class="row container">
+      <div class="col-md-4 col-md-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+        
+          <div class="goodnesssec wear smbg">
+              <a href="#">
+                  <div class="goodnessseccont  text-center">
+                      <img src="{% static 'app/images/product/bridal1.png' %}" class="img-responsive center-block" alt="">
+                      <p class="Bridal">Bridal wear</p>
+                  </div>
+              </a>
+          </div>
+      </div>
+          <div class="col-md-4 col-md-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="goodnesssec wear smbgpro">
+                <a href="#">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/product/w4.jpeg' %}" class="img-responsive center-block" alt="" >
+                        <p class="western">western wear</p>
+                    </div>
+                </a>
+            </div>
+          </div>
+  
+
+
+
+            <div class="col-md-4 col-md-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+              <div class="goodnesssec wear smbg">
+                  <a href="#">
+                      <div class="goodnessseccont text-center">
+                          <img src="{% static 'app/images/product/winter.jpeg' %}" class="img-responsive center-block" alt="" >
+                          <p class="winter">winter wear</p>
+                      </div>
+                  </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-md-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+              <div class="goodnesssec wear smbg">
+                  <a href="#">
+                      <div class="goodnessseccont text-center">
+                          <img src="{% static 'app/images/product/sum1.jpeg' %}" class="img-responsive center-block" alt="" >
+                          <p class="sumnner">summer wear</p>
+                      </div>
+                  </a>
+              </div>
+            </div>            
+            
+            <div class="col-md-4 col-md-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+              <div class="goodnesssec wear smbg">
+                  <a href="#">
+                      <div class="goodnessseccont text-center">
+                          <img src="{% static 'app/images/product/Active.jpeg' %}" class="img-responsive center-block" alt="" >
+                          <p class="active">active wear</p>
+                      </div>
+                  </a>
+              </div>
+            </div>          
+            
+
+            
+      </div>
+  </div>
+</div>
+  
+
+  
+{% endblock main-content %}
